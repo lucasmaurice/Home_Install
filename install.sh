@@ -27,3 +27,11 @@
 
 #sudo npm install serialport --unsafe-perm --build-from-source
 #sudo npm install -g homebridge-marantz-rs232
+
+#INSTALL AND ENABLE I2C
+#sudo echo "#No blacklisted devices" >> /etc/modprobe.d/raspi-blacklist.conf
+#sudo echo "i2c-dev" >> /etc/modules
+#sudo echo "i2c-bcm2708" >> /etc/modules
+#sudo apt-get install i2c-tools
+#sudo adduser pi i2c
+#sudo npm install -g i2c

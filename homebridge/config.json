@@ -12,6 +12,46 @@
         {
             "accessory": "PiTemperature",
             "name": "Raspberry Temperature"
-        }
+        },
+	{
+		"accessory": "Fake-RGB",
+		"name": "Bulb 1",
+		"address": 8,
+		"bulbNbr": 1,
+		"radioNbr": 2
+	},
+        {
+                "accessory": "Fake-RGB",
+                "name": "Bulb 2",
+                "address": 8,
+                "bulbNbr": 2,
+                "radioNbr": 2
+        },
+	{
+ 		"accessory": "WakeOnLan",
+ 		"name": "Desktop",
+ 		"macAddress": "00:1F:5B:33:EF:64"
+ 	},
+	{
+		"accessory": "people",
+		"name":"People",
+		"people": [ 
+			{ "name": "Lucas","target": "192.168.1.6" },
+			{ "name": "Thomas","target": "192.168.1.22" },
+			{ "name": "Matthieu","target": "192.168.1.2" }
+		],
+		"threshold": 15,
+		"anyone_sensor": true,
+		"noone_sensor": false 
+	}
+
+    ],
+    "platforms" : [
+	{
+		"platform": "Server",
+		"port": 8765,
+		"name": "Homebridge Server",
+		"log" : "<PATH_TO_YOUR_LOG_FILE>"
+	}
     ]
 }

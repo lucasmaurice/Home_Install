@@ -12,6 +12,10 @@
         {
             "accessory": "PiTemperature",
             "name": "Raspberry Temperature"
-        }
+        },
+	{
+		"accessory": "Fake-RGB",
+		"name": "RGB Bulb"
+	}
     ]
 }
