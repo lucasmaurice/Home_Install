@@ -4,9 +4,9 @@
 sudo timedatectl set-timezone America/Toronto
 
 #INSTALLATION OF NODEJS FROM FOLDER (uncomment the two following lines to install from the web)
-#wget https://nodejs.org/dist/v4.3.2/node-v4.3.2-linux-armv6l.tar.gz
-#tar -xvf node-v4.3.2-linux-armv6l.tar.gz 
-cd node-v4.3.2-linux-armv6l
+wget https://nodejs.org/dist/v6.10.0/node-v6.10.0-linux-armv6l.tar.xz
+tar -xvf node-v6.10.0-linux-armv6l.tar.xz
+cd node-v6.10.0-linux-armv6l
 sudo cp -R * /usr/local/
 
 #INSTALL AVAHI DEAMON for APPLE BONJOUR 
